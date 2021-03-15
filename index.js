@@ -2,6 +2,7 @@
 //---------------------------------------------------------
 // Import Express
 const express = require('express');
+const port=process.env.port || 5000;
 
 // Create An Express Application
 // We may have several Express applications in a project.
@@ -13,4 +14,4 @@ index.get('/', (req, res) => {
 });
 
 // Listen to port 5000
-index.listen(5000);
+index.listen(port);
